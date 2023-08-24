@@ -1,0 +1,42 @@
+.dropdown button {
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content {
+    /* display:note; hides the dropdown options when they're not activated. */
+    display: none;
+    background-color: hsl(0, 0%, 95%);
+    /*position: absolute; prevents the button from pushing down other page elements. Now the dropdown options float over other elements on the page.*/
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 80%);
+}
+
+/* display the dropdown options when the button is hovered. */
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.dropdown a:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+/*This prevents the dropdown options to be displayed when the user hovers to the right side of the button.*/
+.dropdown {
+    display: inline-block;
+}
